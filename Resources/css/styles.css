@@ -1,0 +1,38 @@
+
+.col-lg-8, .col-lg{
+    background-color: white !important;
+    border-radius: 5px !important;
+}
+p {
+    color: #5e5e5e !important;
+    font-size: 18px !important;
+    line-height: 2.5rem;
+}
+h1 {
+    color: #158CBA !important;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 2rem !important;
+}
+
+h3 {
+    color: #158CBA !important;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1rem !important;
+}
+
+a.darken:hover img {
+    opacity: 0.4;
+}
+
+#navbarColor01{
+    font-size: 20px;
+}
+
+.contentDiv {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+tbody > tr:nth-child(odd) {background: #CCC}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../Resources/css/bootstrap.min.css">
+
+<!--CDNS for bootstrap js + dependencies https://getbootstrap.com/docs/4.0/getting-started/download/-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="../Resources/css/styles.css">
+
+<html lang="en-us">
+<head>
+    <meta charset="UTF_8">
+    <title>Visualization Dashboard</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+    <a class="navbar-brand" style="font-size: 20px;" href="index.html">Lattitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
+                    <a class="dropdown-item" href="max_humidity.html">Max Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<body style="background-color: #D3D3D3;">
+    <div class="row m-5">
+        <div class="col-lg-8 px-3 float-left m-2 contentDiv">
+            <h1>Summary: Latitude vs. X</h1>
+            <hr>
+            <img class="img-fluid float-left" style="max-width: 30%;" src="../Resources/assets/images/fig1.png">
+            <p>
+                The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+                To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+            </p>
+               
+            <p>
+                After assembling the dataset, 
+                we used Matplotlib to plot various aspects of the weather vs. latitude. 
+                Factors we looked at included: temerature, cloudiness, wind speed, and humidity. 
+                This site provides the source data and visualization created as part of the analysis, 
+                as well as the explanations and descriptions of any trends and correlations witnessed.
+            </p>
+        </div>
+
+        <div class="col-lg m-2 pb-4" style="display: inline-table;">
+            <h1>Visulizations</h1>
+            <hr>
+            <div class="row justify-content-center">                
+                <div class="col-lg-6 col-sm-3">
+                    <a href="max_temperature.html" class="darken">                    
+                        <img class="" style="max-width: 100%;" src="../Resources/assets/images/fig1.png">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-sm-3">
+                    <a href="max_humidity.html" class="darken">
+                        <img class="" style="max-width: 100%;" src="../Resources/assets/images/fig2.png">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-sm-3">
+                    <a href="cloudiness.html" class="darken">
+                        <img class="" style="max-width: 100%;" src="../Resources/assets/images/fig3.png">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-sm-3">
+                    <a href="wind_speed.html" class="darken">
+                        <img class="" style="max-width: 100%;" src="../Resources/assets/images/fig4.png">
+                    </a>
+                </div>       
+            </div>
+        </div>
+    </div>
+</body>
+</html>
